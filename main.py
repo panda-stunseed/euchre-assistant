@@ -5,29 +5,22 @@ from dataclasses import dataclass
 
 
 @dataclass
-class MinionCard(AbstractCard):
-    """A card that represent a minion.
+class Card(AbstractCard):
+    """A card from a standard card deck 
 
-    A minion has a health, an attack and a cost.
     """
 
-    health: int
-    attack: int
-    cost: int
+    number: int
+    suit: int
+    face: str = ""  
 
-    description: str = ""
 
 
 if __name__ == "__main__":
-    card = MinionCard(
-        name="Frodo the Hobbit",
-        health=6,
-        attack=2,
-        cost=3,
-        description=(
-            "Frodo's name comes from the Old English name Fróda, "
-            "meaning 'wise by experience'"
-        ),
+    card = Card(
+        name = "10 diamonds",
+        number = 10,
+        suit = "Diamond" 
     )
 
     print(card)
