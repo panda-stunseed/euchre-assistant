@@ -24,3 +24,13 @@ if __name__ == "__main__":
     )
 
     print(card)
+
+# Deal to players (4)
+# Define Trump Card 
+# Play the game 
+#   a. First card plays (dealer first?)
+#   b. Player turn clockwise
+#   c. Enforce rules on each turn 
+#   d. 5 times 
+# Count score (however that's done) 
+# Player with highest score wins 
